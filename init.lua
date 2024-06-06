@@ -479,3 +479,6 @@ require('lazy').setup({
 -- that they don't override it.
 vim.opt.textwidth = 0
 vim.opt.wrapmargin = 0
+
+-- Keep signcolumn off
+vim.opt.signcolumn = 'no'
