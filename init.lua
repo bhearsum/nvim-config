@@ -5,11 +5,6 @@ vim.g.maplocalleader = ' '
 -- Without this, python files take ages to load
 vim.g.python3_host_prog = "/home/bhearsum/.pyenv/shims/python3"
 
--- Disable wrapping entirely. Must happen after all plugins are loaded to ensure
--- that they don't override it.
-vim.opt.textwidth = 0
-vim.opt.wrapmargin = 0
-
 -- Show line numbers
 vim.opt.number = true
 
@@ -263,3 +258,8 @@ require('lazy').setup({
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 
 })
+
+-- Disable wrapping entirely. Must happen after all plugins are loaded to ensure
+-- that they don't override it.
+vim.opt.textwidth = 0
+vim.opt.wrapmargin = 0
