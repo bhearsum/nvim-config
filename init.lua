@@ -31,6 +31,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
+  { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true },
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   'PeterRincker/vim-argumentative',
   'tpope/vim-surround',
@@ -482,3 +483,7 @@ vim.opt.wrapmargin = 0
 
 -- Keep signcolumn off
 vim.opt.signcolumn = 'no'
+
+-- Theme/colorscheme - this is tied to the installation of gruvbox further up
+vim.opt.background = "light"
+vim.cmd([[colorscheme gruvbox]])
